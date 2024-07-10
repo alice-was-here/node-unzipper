@@ -40,6 +40,7 @@
     "request": "^2.88.0",
     "stream-buffers": ">= 0.2.5 < 1",
     "tap": "^12.7.0",
+    "tap-node16": "npm:tap@^16.3.10",
     "temp": ">= 0.4.0 < 1"
   },
   "peerDependencies": {

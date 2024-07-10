@@ -1,4 +1,4 @@
-const test = require('tap').test;
+const test = require('tap-node16').test;
 const unzip = require('../unzip');
 
 const version = +process.version.replace('v', '').split('.')[0];
