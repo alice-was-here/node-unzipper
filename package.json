@@ -39,8 +39,7 @@
     "iconv-lite": "^0.4.24",
     "request": "^2.88.0",
     "stream-buffers": ">= 0.2.5 < 1",
-    "tap": "^12.7.0",
-    "tap-node16": "npm:tap@^16.3.10",
+    "tap": "^16.3.10",
     "temp": ">= 0.4.0 < 1"
   },
   "peerDependencies": {
@@ -61,8 +60,6 @@
   ],
   "main": "unzip.js",
   "scripts": {
-    "test": "npx tap@^12.7.0 test/*.js --coverage-report=html --reporter=dot",
-    "test:node16": "npx tap@^16.3.10 test/*.js --coverage-report=html --reporter=dot"
-
+    "test": "npx tap@^16.3.10 test/*.js --coverage-report=html --reporter=dot"
   }
 }

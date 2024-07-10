@@ -1,10 +1,11 @@
-const test = require('tap-node16').test;
+const test = require('tap').test;
 const unzip = require('../unzip');
 
 const version = +process.version.replace('v', '').split('.')[0];
 
 test("get content of a single file entry out of a zip", { skip: version < 16 }, function(t) {
   const { S3Client } = require('@aws-sdk/client-s3');
+
   const client = new S3Client({ region: 'us-east-1' });
 
   // These files are provided by AWS's open data registry project.
@@ -25,4 +26,5 @@ test("get content of a single file entry out of a zip", { skip: version < 16 }, 
       t.end();
     });
   });
+
 });
